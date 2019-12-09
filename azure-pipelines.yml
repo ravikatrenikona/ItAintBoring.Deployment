@@ -11,8 +11,8 @@ pool:
   name: default
 
 steps:
-- powershell: $(Build.Repository.LocalPath)\Setup\Projects\Demo\import.ps1       
-  workingDirectory: $(Build.Repository.LocalPath)\Setup\Projects\Demo
+- powershell: $(Build.Repository.LocalPath)\Setup\Projects\DeploymentDemo\import.ps1       
+  workingDirectory: $(Build.Repository.LocalPath)\Setup\Projects\DeploymentDemo
   env: 
     ConnectionString: $(connectionString)
     SolutionName: $(solutionName)
